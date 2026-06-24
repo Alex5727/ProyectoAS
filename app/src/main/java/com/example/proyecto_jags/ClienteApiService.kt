@@ -20,6 +20,11 @@ interface ClienteApiService {
 
     @DELETE("api/Client/{clave}")
     fun eliminarCliente(
-        @Path("clave") clave:String
+        @Path("clave") clave: String
     ): Call<Any>
+
+    @GET("api/Client/Get/Cliente/{clave}")
+    fun obtenerCliente(
+        @Path("clave") clave: String
+    ): Call<Cliente>
 }
