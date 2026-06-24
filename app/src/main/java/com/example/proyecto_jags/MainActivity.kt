@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
 
                             Toast.makeText(
                                 this@MainActivity,
-                                "Error ${response.code()}",
+                                "Credenciales incorrectas",
                                 Toast.LENGTH_LONG
                             ).show()
 
